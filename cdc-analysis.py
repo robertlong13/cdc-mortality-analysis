@@ -76,7 +76,7 @@ class DetailAge(Field):
         else:
             return 0
     
-    # Return age in integer years
+    # Return age in integer months
     def months(self):
         if(self.code[0] == '1'):
             return 12*int(self.code[1:])
